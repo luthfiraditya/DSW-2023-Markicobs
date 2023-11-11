@@ -12,9 +12,9 @@ columns_low = ['Tenure Months', 'Payment Method']
 columns_mid=['Total Expense (Thou. IDR)', 'Behaviour_Combination']
 columns_high=['Total Expense (Thou. IDR)', 'Behaviour_Combination']
 
-df_low = pd.read_excel('lowend_result.xlsx')
-df_mid = pd.read_excel('midend_result.xlsx')
-df_high = pd.read_excel('highend_result.xlsx')
+df_low = pd.read_csv('lowend_result.csv',delimiter=';')
+df_mid = pd.read_csv('midend_result.csv',delimiter=';')
+df_high = pd.read_csv('highend_result.csv',delimiter=';')
 
 
 def get_user_combination(user_input,df_combi):
